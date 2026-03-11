@@ -1,107 +1,96 @@
-import { FileCheck, Users, FileText, Briefcase, Building, Landmark } from 'lucide-react';
+import { FileText, Stamp, Users, Handshake, ShieldCheck, Briefcase } from 'lucide-react';
 
 const services = [
   {
-    icon: FileCheck,
-    title: "Trade Licence Issuance",
-    desc: "We facilitate the issuance of trade licenses from the Department of Economic Development (DED) and assist with Chamber of Commerce registration.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=600&auto=format&fit=crop",
+    icon: FileText,
+    title: "Document Processing",
+    desc: "We provide full spectrum of document processing services, including clearing, translations, attestation, and legalization with government authorities.",
     color: "from-red-500 to-rose-600"
   },
   {
-    icon: Users,
-    title: "UAE National Sponsorship",
-    desc: "We introduce dependable UAE Nationals as Local Partners or Service Agents per your business requirements.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=600&auto=format&fit=crop",
+    icon: Stamp,
+    title: "Trade Mark / Patent",
+    desc: "Comprehensive trademark and patent registration services to safeguard your business identity and protect your intellectual property in the UAE.",
     color: "from-blue-500 to-indigo-600"
   },
   {
-    icon: FileText,
-    title: "Government Processing",
-    desc: "Our team handles all necessary government processes, including Labor card, Immigration, and Establishment Card processing.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop",
+    icon: Users,
+    title: "Tourist / Dependents / Companion",
+    desc: "Simplifying all tourist, dependent, and companion visa processes with complete documentation support and expedited processing services.",
     color: "from-emerald-500 to-teal-600"
+  },
+  {
+    icon: Handshake,
+    title: "Local Sponsorship",
+    desc: "Expert assistance for obtaining local sponsorship services. We introduce dependable UAE Nationals as Local Partners or Service Agents per your requirements.",
+    color: "from-violet-500 to-purple-600"
+  },
+  {
+    icon: ShieldCheck,
+    title: "Attestation & Legalisation",
+    desc: "Complete solutions for attestation & legalization of documents from ministries, embassies, and consulates for both personal and commercial use.",
+    color: "from-orange-500 to-amber-600"
   },
   {
     icon: Briefcase,
     title: "PRO Services",
-    desc: "We provide expert PRO Services for all visa processing, be it for investors or employment, along with medical, stamping, and renewals.",
-    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600&auto=format&fit=crop",
-    color: "from-violet-500 to-purple-600"
-  },
-  {
-    icon: Building,
-    title: "Company Incorporation",
-    desc: "Our services cover smooth company incorporation, license renewal in Dubai, and efficient company liquidation processes.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop",
-    color: "from-orange-500 to-amber-600"
-  },
-  {
-    icon: Landmark,
-    title: "Bank Account Opening",
-    desc: "We assist in opening commercial accounts with banks in Dubai.",
-    image: "https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?q=80&w=600&auto=format&fit=crop",
+    desc: "Full-service PRO support across the Emirates, handling all government liaison work, visa processing, labour cards, and regulatory compliance.",
     color: "from-cyan-500 to-blue-600"
   }
 ];
 
 export default function MainlandServices() {
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#f5f5f0] to-white"></div>
-      
+    <section className="relative py-24 px-6 overflow-hidden bg-white">
+      <div className="absolute inset-0 dot-pattern opacity-20"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[400px] bg-gradient-to-bl from-red-50/50 to-transparent rounded-full blur-3xl"></div>
+
       <div className="relative max-w-7xl mx-auto">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-2 h-2 bg-gradient-to-r from-red-500 to-orange-500 rounded-full"></div>
-          <span className="text-xs font-bold tracking-widest uppercase text-gray-500">Our Services</span>
-        </div>
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-2xl">
-            Our Mainland{' '}
-            <span className="gradient-text">Company Formation</span>{' '}
-            Services
-          </h2>
-          <p className="text-gray-500 max-w-sm text-sm">End-to-end support from licensing to visa processing for your Dubai business setup.</p>
-        </div>
-
-        {/* Services image banner */}
-        <div className="relative rounded-2xl overflow-hidden mb-16 shadow-xl group">
-          <img 
-            src="https://images.unsplash.com/photo-1582407947092-50b8c1b50623?q=80&w=1600&auto=format&fit=crop"
-            alt="Dubai Marina Business Hub"
-            className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-          <div className="absolute bottom-6 left-8">
-            <p className="text-white text-2xl font-bold">Full-Service Business Setup</p>
-            <p className="text-white/70">From concept to completion — we handle everything</p>
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="w-8 h-0.5 bg-gradient-to-r from-red-500 to-orange-500 rounded-full"></div>
+            <span className="text-xs font-bold tracking-widest uppercase text-gray-500">Our Services</span>
+            <div className="w-8 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
           </div>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-4">
+            Facilitating Corporate{' '}
+            <span className="gradient-text">PRO Services</span>{' '}
+            In The UAE
+          </h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">
+            End-to-end government relations and business support services to help you establish and operate your business seamlessly across the UAE.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 3×2 Service cards grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div 
               key={i} 
-              className="group relative bg-white rounded-2xl overflow-hidden border border-black/5 hover:shadow-2xl transition-all duration-500 animate-fade-in-up"
+              className="group relative bg-[#f9f9f6] hover:bg-white rounded-2xl p-8 border border-transparent hover:border-red-100 hover:shadow-xl transition-all duration-500 animate-fade-in-up"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              {/* Card image that shows on hover */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
-                <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+              {/* Icon */}
+              <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                <service.icon className="w-8 h-8 text-white" />
               </div>
 
-              <div className="relative p-8 flex flex-col h-full">
-                <div className={`w-14 h-14 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
-                  <service.icon className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4 group-hover:text-gray-900">{service.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mt-auto">{service.desc}</p>
-                
-                {/* Bottom accent */}
-                <div className={`w-8 h-1 bg-gradient-to-r ${service.color} rounded-full mt-6 group-hover:w-16 transition-all duration-500`}></div>
-              </div>
+              {/* Content */}
+              <h3 className="text-xl font-bold mb-3 group-hover:text-gray-900 transition-colors">{service.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{service.desc}</p>
+
+              {/* Bottom accent line */}
+              <div className={`w-10 h-1 bg-gradient-to-r ${service.color} rounded-full mt-6 group-hover:w-20 transition-all duration-500`}></div>
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-12">
+          <button className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-10 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-red-500/25 transition-all duration-300 hover:-translate-y-0.5">
+            Read More About Us
+          </button>
         </div>
       </div>
     </section>

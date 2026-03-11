@@ -3,36 +3,36 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
-    q: "What is mainland company formation in Dubai?",
-    a: "Mainland company formation refers to establishing a business under the jurisdiction of the UAE's Department of Economic Development (DED). It allows businesses to operate freely within the UAE and internationally without restrictions."
+    q: "What are PRO Services in Dubai/UAE?",
+    a: "PRO (Public Relations Officer) Services encompass all government-related transactions including visa processing, document clearing, company licensing, and liaison with government departments such as Labour, Immigration, and the Ministry of Economy."
   },
   {
-    q: "What is a mainland license in the UAE?",
-    a: "A mainland license is a trade license issued by the DED that permits businesses to operate in Dubai and across the UAE. It covers commercial, professional, and industrial activities."
+    q: "What is mainland company formation in Dubai?",
+    a: "Mainland company formation refers to establishing a business under the jurisdiction of the UAE's Department of Economic Development (DED). It allows businesses to operate freely within the UAE and internationally without restrictions."
   },
   {
     q: "Can I own 100% of my mainland business in Dubai?",
     a: "Yes! Recent reforms allow foreign investors to enjoy 100% ownership in over 1,000 business activities without needing a local sponsor or partner."
   },
   {
-    q: "What is the role of a local sponsor in Dubai Mainland?",
-    a: "While most activities no longer require a local sponsor, certain regulated sectors may still need a UAE national as a service agent. They act as a liaison with government authorities."
+    q: "How much do PRO Services cost in the UAE?",
+    a: "The cost of PRO Services varies based on the type and complexity of services required. Basic visa processing may start from AED 500, while comprehensive packages covering company formation, licensing, and visa processing can range from AED 7,999 to AED 17,250 depending on the scope."
   },
   {
-    q: "What are the benefits of setting up a mainland company in Dubai?",
-    a: "Key benefits include 100% foreign ownership, no restrictions on business scope, freedom to trade anywhere in the UAE, access to government contracts, unlimited visa quotas, and a strategic location."
+    q: "What documents are needed for PRO Services?",
+    a: "Required documents typically include passport copies, visa copies, Emirates ID, initial approval from DED, MOA (for LLCs), trade name reservation, and a tenancy contract for office space. Additional documents may be needed based on the specific service."
   },
   {
-    q: "Do I need an office space to set up a mainland company in Dubai?",
-    a: "Yes, mainland companies require a physical office space. The lease agreement must be submitted to the DED as part of the licensing process. We can help you find the right office."
+    q: "Can you handle visa processing for my company?",
+    a: "Absolutely! We handle all types of visa processing including investor visas, employment visas, family visas, tourist visas, and Golden Visa applications. Mainland companies can sponsor unlimited employee visas based on the office space size."
   },
   {
-    q: "What documents are required for mainland company formation?",
-    a: "Required documents typically include passport copies, visa copies, initial approval from DED, MOA (for LLCs), trade name reservation, and a tenancy contract for office space."
+    q: "What is the timeline for PRO services?",
+    a: "Timelines vary by service — trade license issuance can take 3-5 working days, visa processing 5-10 working days, and full company formation 1-3 weeks. Our fast-track options can expedite most services significantly."
   },
   {
-    q: "Can I get a visa through my Dubai Mainland company?",
-    a: "Absolutely! Mainland companies can sponsor unlimited employee visas based on the office space size. You can also sponsor family visas for dependents."
+    q: "Do you provide services across all Emirates?",
+    a: "Yes, we provide comprehensive PRO services across Dubai, Abu Dhabi, Sharjah, Ajman, Fujairah, Ras Al Khaimah, and Umm Al Quwain. Our team covers all seven Emirates for your convenience."
   },
   {
     q: "Can Mainland companies trade freely within the UAE?",
@@ -64,7 +64,7 @@ export default function MainlandFAQ() {
             </h2>
             <div className="w-16 h-1 bg-gradient-to-r from-red-500 to-orange-400 rounded-full mb-6"></div>
             <p className="text-gray-600 mb-8">
-              Everything you need to know about setting up a mainland company in Dubai. Can't find an answer? Contact our team.
+              Everything you need to know about PRO services and mainland company formation in Dubai. Can't find an answer? Contact our expert team.
             </p>
 
             {/* Consultation image */}
@@ -77,7 +77,7 @@ export default function MainlandFAQ() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-white font-semibold text-lg">Need Expert Guidance?</p>
-                <p className="text-white/70 text-sm mb-4">Our consultants are here to help</p>
+                <p className="text-white/70 text-sm mb-4">Our PRO consultants are here to help</p>
                 <button className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-red-500/25 transition-all">
                   Book a Call
                 </button>
